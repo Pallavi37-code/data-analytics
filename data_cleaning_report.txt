@@ -1,0 +1,32 @@
+DATA CLEANING REPORT – Shared Cab Booking System (RideMate)
+
+Original rows: 100
+Original columns: 10
+
+Cleaning performed:
+1. Standardized column names.
+2. Removed completely empty rows and columns.
+3. Removed exact duplicate records.
+4. Removed leading/trailing spaces from text fields.
+5. Standardized booking status values.
+6. Converted seats and fare fields to numeric values.
+7. Standardized travel date and time formats.
+8. Filled missing numeric values using the column median.
+9. Filled remaining missing categorical/date values using the column mode.
+10. Corrected invalid non-positive seat values.
+11. Corrected negative fare values using the median fare.
+
+Empty rows removed: 0
+Empty columns removed: 0
+Duplicate rows removed: 0
+Final rows: 100
+Remaining duplicate rows: 0
+Remaining missing values: 0
+
+Numeric imputations:
+{}
+
+Categorical imputations:
+{'Travel_Date': {'missing': 64, 'filled_with_mode': '2026-05-09'}}
+
+Output file: cleandata.csv
